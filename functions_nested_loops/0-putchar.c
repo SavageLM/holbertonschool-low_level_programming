@@ -10,29 +10,29 @@
 int main(void)
 {
 	{
-		char i = '95';
+		char i = 95;
 
 		_putchar(i);
 
-		i = '70';
+		i = 70;
 		_putchar(i);
 
-		i = '75';
+		i = 75;
 		_putchar(i);
 
-		i = '74';
+		i = 74;
 		_putchar(i);
 
-		i = '63';
+		i = 63;
 		_putchar(i);
 
-		i = '68';
+		i = 68;
 		_putchar(i);
 
-		i = '61';
+		i = 61;
 		_putchar(i);
 
-		i = '72';
+		i = 72;
 		_putchar(i);
 	}
 
