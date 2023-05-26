@@ -10,7 +10,7 @@
 int main(void)
 {
 	{
-		char i = _;
+		char i = 95;
 
 		_putchar(i);
 
