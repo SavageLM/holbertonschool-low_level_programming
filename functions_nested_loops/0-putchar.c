@@ -14,28 +14,25 @@ int main(void)
 
 		_putchar(i);
 
-		i = p;
-
+		i = 70;
 		_putchar(i);
 
-		i = u;
-
+		i = 75;
 		_putchar(i);
 
-		i = t;
-
+		i = 74;
 		_putchar(i);
 
-		i = c;
+		i = 63;
 		_putchar(i);
 
-		i = h;
+		i = 68;
 		_putchar(i);
 
-		i = a;
+		i = 61;
 		_putchar(i);
 
-		i = r;
+		i = 72;
 
 		_putchar(i);
 	}
