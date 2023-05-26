@@ -9,32 +9,14 @@
 
 int main(void)
 {
-	{
-		char i = 95;
-
-		_putchar(i);
-
-		i = 70;
-		_putchar(i);
-
-		i = 75;
-		_putchar(i);
-
-		i = 74;
-		_putchar(i);
-
-		i = 63;
-		_putchar(i);
-
-		i = 68;
-		_putchar(i);
-
-		i = 61;
-		_putchar(i);
-
-		i = 72;
-		_putchar(i);
-	}
+	_putchar("_");
+	_putchar("p");
+	_putchar("u");
+	_putchar("t");
+	_putchar("c");
+	_putchar("h");
+	_putchar("a");
+	_putchar("r");
 
 	return (0);
 }
