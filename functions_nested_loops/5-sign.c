@@ -22,8 +22,8 @@ int print_sign(int n)
 	}
 	else if (n < 48)
 	{
-		return (-1);
 		_putchar(45);
+		return (1);
 	}
 
 	return (0);
