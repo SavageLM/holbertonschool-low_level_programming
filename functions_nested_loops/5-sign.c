@@ -15,12 +15,12 @@ int print_sign(int n)
 		return (1);
 		-putchar(43);
 	}
-	if else(n = 48)
+	else if(n = 48)
 	{
 		return (0);
 		_putchar(48);
 	}
-	if else(n < 48)
+	else if(n < 48)
 	{
 		return (-1);
 		_putchar(45)
