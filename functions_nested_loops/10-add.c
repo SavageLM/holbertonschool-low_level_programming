@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * add - Entry point
  * @x: First number to be added
  * @y: Second number to be added
  *
