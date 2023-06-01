@@ -12,7 +12,7 @@ void print_most_numbers(void)
 {
 	int x; 
 
-	while(x < 11)
+	while (x < 11)
 
 		int i;
 
