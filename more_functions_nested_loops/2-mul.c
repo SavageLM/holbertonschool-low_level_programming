@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isdigit - entry point to function
+ * mul - entry point to function
  * Return: returns the product of a and b
  * @a: input to check
  * @b: input to check
