@@ -2,15 +2,15 @@
 #include "main.h"
 
 /**
- * print_most_numbers - entry point to function
+ * more_numbers - entry point to function
  *
  *
  *
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int x = 1; 
+	int x = 1;
 
 	while (x < 11)
 	{
