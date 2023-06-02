@@ -25,7 +25,7 @@ void print_triangle(int size)
 				_putchar('#');
 
 
-			if (line == n - 1)
+			if (hash == size)
 				break;
 
 			_putchar('\n');
