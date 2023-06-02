@@ -15,9 +15,9 @@ void print_square(int size)
 
 	else
 	{
-		int x = 1;
+		int x = 1, row;
 
-		while (x <= n)
+		while (x <= size)
 		{
 			for (row = 1; row <= n; row++;)
 			{
