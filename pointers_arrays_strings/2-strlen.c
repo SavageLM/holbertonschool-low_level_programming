@@ -4,16 +4,16 @@
 /**
  * int_strlen - entry to function
  * @s: string to be counted
+ * Return: returns string length
  */
 
 int _strlen(char *s)
 {
 	int len;
 
-	while ( *s != '\0')
+	while (*s++)
 	{
 		len++;
-		s++;
 	}
 
 	return len;
