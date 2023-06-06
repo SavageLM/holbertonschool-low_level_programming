@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	int i = 0, n = 0, sign = 1;
 
-	if (s[0] == '-')
+	if (s[i] == '-')
 	{
 		sign = -1;
 		i = 1;
