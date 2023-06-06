@@ -11,7 +11,7 @@ void puts2(char *str)
 
 	int c = 0, i = 0;
 
-	whule str[i++]
+	while (str[i++])
 	{
 		c++;
 	}
