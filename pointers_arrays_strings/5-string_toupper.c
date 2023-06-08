@@ -3,7 +3,7 @@
 
 /**
  * *string_toupper - entry to function
- * @*str: string to be checked
+ * @str: string to be checked
  * Return: returns changed string
  */
 
