@@ -7,7 +7,7 @@
  * Return: returns changed string
  */
 
-char *leet(char *)
+char *leet(char *str)
 {
 	int i = 0, c = 0;
 
