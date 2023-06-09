@@ -20,7 +20,7 @@ char *cap_string(char *str)
 			for (m = 0; m < 13; m++)
 			{
 				if (str[i - 1] == s[m])
-					str[i] = str[1] - 32;
+					str[i] = str[i] - 32;
 			}
 		}
 	}
