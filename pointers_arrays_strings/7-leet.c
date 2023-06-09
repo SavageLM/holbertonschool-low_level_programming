@@ -17,10 +17,10 @@ char *leet(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (c = 0; A1[c] != '\0'; c++)
-			{
-				if (str[i] == A1[c])
-					str[i] = A2[c];
-			}
+		{
+			if (str[i] == A1[c])
+				str[i] = A2[c];
+		}
 	}
 
 	return (str);
