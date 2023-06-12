@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 {
 	int i, res1, res2;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < size; i++)
 	{
 		res1 += a[(size + 1) * i];
 		res2 += a[(size - 1) * (i + 1)];
