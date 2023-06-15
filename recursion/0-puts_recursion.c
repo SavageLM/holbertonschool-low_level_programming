@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
- * _puts_recursion- entrance to the function 
+ * _puts_recursion- entrance to the function
  * @s: String to be printed
- * 
  */
 
 void _puts_recursion(char *s)
