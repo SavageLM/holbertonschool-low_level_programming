@@ -11,7 +11,7 @@
 int sqroot_check(int n, int root)
 {
 
-	int root = 0, check = root * root;
+	int check = root * root;
 
 	if (check < n)
 		return (-1);
