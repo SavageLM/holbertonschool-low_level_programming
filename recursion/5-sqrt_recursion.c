@@ -19,7 +19,7 @@ int sqroot_check(int n, int root)
 	if (check == n)
 		return (root);
 
-	return (_sqrt_recursion(n, root + 1));
+	return (sqroot_check(n, root + 1));
 
 }
 
