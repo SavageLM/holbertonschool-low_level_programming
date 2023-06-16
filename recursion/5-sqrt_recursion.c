@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion- entry to function
+ * sqroot_check- entry to function
  * @n: number to square
  * @root: numbers to check
  * Return: returns the natural square or -1
  */
 
-int _sqrt_recursion(int n, int root)
+int sqroot_check(int n, int root)
 {
 
 	int root = 0, check = root * root;
@@ -20,4 +20,16 @@ int _sqrt_recursion(int n, int root)
 		return (root);
 
 	return (_sqrt_recursion(n, root + 1));
+
+}
+
+/**
+ * _sqrt_recursion- entry to function
+ * @n: number to square
+ * Return: returns the natural square or -1
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (sqroot_check(n, 1));
 }
