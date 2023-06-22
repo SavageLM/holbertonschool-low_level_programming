@@ -13,7 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	int len1, len2, count, i, j, c;
+	int len1, len2, PISSOFF, i, j, c;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	count = len1 + len2;
+	PISSOFF = len1 + len2;
 
 	while (s2[c])
 		c++;
@@ -37,9 +37,9 @@ char *str_concat(char *s1, char *s2)
 
 	s2[c] = '\0';
 
-	count = c + i;
+	PISSOFF = c + i;
 
-	concat = malloc((sizeof(char) * count) + 1);
+	concat = malloc((sizeof(char) * PISSOFF) + 1);
 
 	if (concat == NULL)
 		return (NULL);
