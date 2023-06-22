@@ -15,6 +15,12 @@ char *str_concat(char *s1, char *s2)
 	char *concat;
 	int len, i, j, c;
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s2[c])
 		c++;
 
@@ -27,9 +33,9 @@ char *str_concat(char *s1, char *s2)
 
 	s2[c] = '\0';
 
-	len = strlen(s2);
+	len = c + i;
 
-	concat = malloc(sizeof(char) * len + 1);
+	concat = malloc((sizeof(char) * len) + 1);
 
 	if (concat == NULL)
 		return (NULL);
