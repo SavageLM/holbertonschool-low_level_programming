@@ -21,23 +21,15 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-	PISSOFF = len1 + len2;
-
-	while (s2[c])
+	for (i = 0;s1[i]; i++)
 		c++;
 
-	while (s1[i])
-	{
-		s2[c] = s1[i];
+	for (i = 0;s2[i]; i++)
 		c++;
-		i++;
-	}
 
 	c++;
 
-	concat = malloc(sizeof(char) * PISSOFF);
+	concat = malloc(sizeof(char) * c);
 
 	if (concat == NULL)
 		return (NULL);
