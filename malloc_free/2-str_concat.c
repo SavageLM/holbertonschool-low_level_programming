@@ -37,8 +37,6 @@ char *str_concat(char *s1, char *s2)
 
 	s2[c] = '\0';
 
-	PISSOFF = c + i;
-
 	concat = malloc((sizeof(char) * PISSOFF) + 1);
 
 	if (concat == NULL)
