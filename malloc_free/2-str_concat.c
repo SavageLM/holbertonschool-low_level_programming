@@ -36,9 +36,8 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	c++;
-	PISSOFF++;
 
-	concat = malloc(4108);
+	concat = malloc(sizeof(char) * PISSOFF);
 
 	if (concat == NULL)
 		return (NULL);
