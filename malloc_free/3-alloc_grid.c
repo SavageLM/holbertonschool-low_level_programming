@@ -18,10 +18,10 @@ int **alloc_grid(int width, int height)
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
 
-	for (i = 0; width[i]; i++)
+	for (i = 0; i < width; i++)
 		size++;
 
-	for (i = 0; height[i]; i++)
+	for (i = 0; i < height; i++)
 		size++;
 
 	multarr = malloc(sizeof(int) * size);
@@ -29,9 +29,9 @@ int **alloc_grid(int width, int height)
 	if (multarr == NULL)
 		return (NULL);
 
-	for ( i = o; height[i]; i++)
+	for ( i = 0; i < height; i++)
 	{
-		for (j = 0; witdth[j]; j++)
+		for (j = 0; j < witdth; j++)
 			multarr[i][j] = 0;
 	}
 
