@@ -13,25 +13,19 @@
 int **alloc_grid(int width, int height)
 {
 	int *multarr;
-	int i, j, size = 0;
+	int i, j;
 
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
 
-	for (i = 0; i < width; i++)
-		size++;
-
-	for (i = 0; i < height; i++)
-		size++;
-
-	multarr = malloc(sizeof(int) * size);
+	multarr = malloc(sizeof(int) * width * height);
 
 	if (multarr == NULL)
 		return (NULL);
 
 	for ( i = 0; i < height; i++)
 	{
-		for (j = 0; j < witdth; j++)
+		for (j = 0; j < width; j++)
 			multarr[i][j] = 0;
 	}
 
