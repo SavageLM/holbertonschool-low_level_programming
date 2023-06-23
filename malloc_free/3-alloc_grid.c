@@ -23,7 +23,18 @@ int **alloc_grid(int width, int height)
 	if (multarr == NULL)
 		return (NULL);
 
-	for ( i = 0; i < height; i++)
+	for (i = 0; i < height, i++)
+	{
+		multarr[i] = malloc(sizeof(int) * width);
+
+		if (multarr[i] == NULL)
+		{
+			for (; j >= 0; j--)
+				free(multarr[j]);
+		}
+	}
+
+	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
 			multarr[i][j] = 0;
