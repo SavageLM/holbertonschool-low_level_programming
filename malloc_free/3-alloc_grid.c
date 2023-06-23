@@ -31,6 +31,9 @@ int **alloc_grid(int width, int height)
 		{
 			for (; j >= 0; j--)
 				free(multarr[j]);
+
+			free(multarr);
+			return (NULL);
 		}
 	}
 
