@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "main.h"
+
+/**
+ * string_nconcat- entry to function
+ * @s1: first string
+ * @s2: second string
+ * @n: number of bytes of s2 to concatenate
+ * Return: returns pointer on success and NULL on fail
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *nconcat;
+	int i, j = 0;
+	unsigned int len1, len2;
+
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	len1 = strlen(s1);
+
+	nconcat = malloc(sizeof(char) *(len1 + n));
+
+	if (nconcat == NULL)
+		return (NULL);
+
+	for (i = 0; s1[i], i++)
+		nconcat[j++] = s1[i];
+
+	for (i = 0; s2[i] < n; i++)
+		nconcat[j++] = s2[i];
+
+	nconcat[j] = '\0';
+
+	return (nconcat);
+}
