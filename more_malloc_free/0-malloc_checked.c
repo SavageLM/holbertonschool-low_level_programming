@@ -6,16 +6,17 @@
 /**
  * malloc_checked- entry to function
  * @b: number of int bytes to be allocated
+ * Return: pointer to allocate memory
  */
 
 void *malloc_checked(unsigned int b)
 {
 	void *mem;
 
-	mem = malloc(sizeof(unsigned int) * b);
+	mem = malloc(sizeof(b);
 
 	if (mem == NULL)
-		exit (98);
+		exit(98);
 
 	return (mem);
 }
