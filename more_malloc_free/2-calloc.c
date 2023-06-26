@@ -13,7 +13,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *call;
-	unsigned int i, *tmp;
+	unsigned int i;
+	char *tmp;
 
 	if ((nmemb == 0) || (size == 0))
 		return (NULL);
