@@ -26,12 +26,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = strlen(s2);
 
 	if (len2 < n)
-		ttl = len1 + len2 + 1;
+		ttl = len1 + len2;
 
 	else 
-		ttl = len1 + n + 1;
+		ttl = len1 + n;
 
-	nconcat = malloc(sizeof(char) * ttl);
+	nconcat = malloc(sizeof(char) * ttl + 1);
 
 	if (nconcat == NULL)
 		return (NULL);
