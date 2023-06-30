@@ -22,9 +22,9 @@ int (*get_op_func(char *s))(int, int)
 	
 	int i;
 
-	for ( i = 0; ops[i]; i++)
+	for ( i = 0; ops[i].op; i++)
 	{
-		if (s == ops[i])
+		if (s == ops[i].op)
 			return (ops[i].f);
 	}
 
