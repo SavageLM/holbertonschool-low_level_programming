@@ -13,8 +13,11 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *tmpName = malloc(sizeof(char) * name), *tmpOwner = malloc(sizeof(char) * owner);
+	char *tmpName, *tmpOwner;
 	int i, j;
+
+	tmpName = malloc(sizeof(char) * name);
+	tmpOwner = malloc(sizeof(char) * owner);
 
 	for (i = 0; name[i] != '\0'; i++)
 		tmpName[i] = name[i];
