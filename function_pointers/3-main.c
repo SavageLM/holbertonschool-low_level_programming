@@ -34,7 +34,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	if (get_op_func(op) == NULL)
 	{
-		printf("TestError\n");
+		printf("Error\n");
 		exit(99);
 	}
 
