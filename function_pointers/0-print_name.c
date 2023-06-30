@@ -6,7 +6,7 @@
 /**
  * print_name- function that calls on function f to print a name
  * @name: name to print
- * @(*f): function that prints name
+ * @f: function that prints name
  */
 
 void print_name(char *name, void (*f)(char *))
