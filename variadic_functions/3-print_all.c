@@ -86,7 +86,7 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while (j < 4 && (*(format + i) != *(functions[j].sym)))
+		while (j < 4 && (*(format + i) != *(functions[j].type)))
 			j++;
 
 		if (j < 4)
