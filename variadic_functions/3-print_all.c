@@ -64,7 +64,7 @@ void print_string(va_list arg)
 
 /**
  * print_all- prints anything
- * @format- arguement types
+ * @format: arguement types
  * @...: variable number of arguments
  */
 
@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, j = 0;
-	char * separator = "";
+	char *separator = "";
 	checker_t functions[] = {
 		{"c", print_char},
 		{"i", print_int},
