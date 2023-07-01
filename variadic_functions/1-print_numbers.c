@@ -5,7 +5,7 @@
 
 /**
  * print_numbers- Function to print a number of integers and seperators
- * @seperator: a charactger to be printed inbetween integers
+ * @separator: a charactger to be printed inbetween integers
  * @n: number of integers passed to function
  */
 
@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(num, int));
 
-		if (i != (n-1) && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 
