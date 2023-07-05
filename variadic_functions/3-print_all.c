@@ -82,13 +82,13 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while ((format != NULL) && (format[i] != NULL))
+	while ((format != NULL) && (format[i]))
 	{
 		j = 0;
 
 		while (j < 4)
 		{
-			if (format[i] == functions[j].type)
+			if (format[i] == *functions[j].type)
 			{	
 				functions[j].print(args, separator);
 				separator = ", ";
