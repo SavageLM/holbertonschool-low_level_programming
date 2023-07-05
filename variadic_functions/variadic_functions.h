@@ -6,7 +6,7 @@
 typedef struct checker
 {
 	char *type;
-	void (*print)(va_list arg);
+	void (*print)(va_list arg, char *separator);
 }checker_t;
 
 int sum_them_all(const unsigned int n, ...);
