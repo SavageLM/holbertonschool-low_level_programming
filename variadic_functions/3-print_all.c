@@ -81,7 +81,7 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string}
 	};
-	char *separator = "";
+	char *separator = ", ";
 	unsigned int i = 0, j = 0;
 
 	va_start(args, format);
@@ -95,7 +95,9 @@ void print_all(const char * const format, ...)
 			if (format[i] == *functions[j].type)
 			{
 				functions[j].print(args, separator);
-				separator = ", ";
+
+				if (format[i +1] == NULL)
+					separator = "";
 			}
 
 			j++;
