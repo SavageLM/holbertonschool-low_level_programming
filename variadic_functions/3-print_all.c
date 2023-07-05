@@ -75,14 +75,14 @@ void print_string(va_list arg, char *separator)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i = 0, j = 0;
-	char *separator = "";
 	checker_t functions[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string}
 	};
+	char *separator = "";
+	unsigned int i = 0, j = 0;
 
 	va_start(args, format);
 
@@ -104,7 +104,7 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 
-	printf("\n");
-
 	va_end(args);
+
+	printf("\n");
 }
