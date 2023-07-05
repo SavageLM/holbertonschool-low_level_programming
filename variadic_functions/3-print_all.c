@@ -28,7 +28,7 @@ void print_int(va_list arg, char *separator)
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%d%s", num, separator);
+	printf("%i%s", num, separator);
 }
 
 /**
