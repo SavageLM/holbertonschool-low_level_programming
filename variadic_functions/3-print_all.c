@@ -8,12 +8,12 @@
  * @arg: list of arguments pointing to character to print
  */
 
-void print_char(va_list arg)
+void print_char(va_list arg, char separator)
 {
 	char let;
 
 	let = va_arg(arg, int);
-	printf("%c", let);
+	printf("%c%c", let, separator);
 }
 
 /**
@@ -21,12 +21,12 @@ void print_char(va_list arg)
  * @arg: list of arguments pointing to integer to print
  */
 
-void print_int(va_list arg)
+void print_int(va_list arg, char separator)
 {
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%d", num);
+	printf("%d%c", num, separator);
 }
 
 /**
@@ -34,12 +34,12 @@ void print_int(va_list arg)
  * @arg: list of arguments pointing to float to print
  */
 
-void print_float(va_list arg)
+void print_float(va_list arg, char separator)
 {
 	float point;
 
 	point = va_arg(arg, int);
-	printf("%f", point);
+	printf("%f%c", point, separator);
 }
 
 /**
@@ -47,7 +47,7 @@ void print_float(va_list arg)
  * @arg: list of arguments pointing to string to print
  */
 
-void print_string(va_list arg)
+void print_string(va_list arg, char separator)
 {
 	char *str;
 
@@ -59,7 +59,7 @@ void print_string(va_list arg)
 		return;
 	}
 
-	printf("%s", str);
+	printf("%s%c", str, separator);
 }
 
 /**
@@ -82,18 +82,19 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format && (*(format + i)))
+	while ((format != NULL) && (format[i] != NULL))
 	{
 		j = 0;
 
-		while (j < 4 && (*(format + i) != *(functions[j].type)))
-			j++;
-
-		if (j < 4)
+		while (j < 4)
 		{
-			printf("%s", separator);
-			functions[j].print(args);
-			separator = ", ";
+			if (format[i] == functions[j].type)
+			{	
+				functions[j].print(separator, args);
+				separator = ", ";
+			}
+
+			j++
 		}
 
 		i++;
