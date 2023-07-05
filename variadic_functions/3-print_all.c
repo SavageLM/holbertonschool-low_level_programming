@@ -13,7 +13,7 @@ void print_char(va_list arg, char *separator)
 	char let;
 
 	let = va_arg(arg, int);
-	printf("%c%c", let, separator);
+	printf("%c%s", let, separator);
 }
 
 /**
@@ -26,7 +26,7 @@ void print_int(va_list arg, char *separator)
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%d%c", num, separator);
+	printf("%d%s", num, separator);
 }
 
 /**
@@ -39,7 +39,7 @@ void print_float(va_list arg, char *separator)
 	float point;
 
 	point = va_arg(arg, int);
-	printf("%f%c", point, separator);
+	printf("%f%s", point, separator);
 }
 
 /**
@@ -59,7 +59,7 @@ void print_string(va_list arg, char *separator)
 		return;
 	}
 
-	printf("%s%c", str, separator);
+	printf("%s%i", str, separator);
 }
 
 /**
