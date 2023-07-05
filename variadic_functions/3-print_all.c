@@ -6,6 +6,7 @@
 /**
  * print_char- prints a character
  * @arg: list of arguments pointing to character to print
+ * @separator: separates args
  */
 
 void print_char(va_list arg, char *separator)
@@ -19,6 +20,7 @@ void print_char(va_list arg, char *separator)
 /**
  * print_int- prints an integer
  * @arg: list of arguments pointing to integer to print
+ * @separator: separates args
  */
 
 void print_int(va_list arg, char *separator)
@@ -32,6 +34,7 @@ void print_int(va_list arg, char *separator)
 /**
  * print_float- prints a float
  * @arg: list of arguments pointing to float to print
+ * @separator: separates args
  */
 
 void print_float(va_list arg, char *separator)
@@ -45,6 +48,7 @@ void print_float(va_list arg, char *separator)
 /**
  * print_string- prints a string
  * @arg: list of arguments pointing to string to print
+ * @separator: separates args
  */
 
 void print_string(va_list arg, char *separator)
@@ -89,7 +93,7 @@ void print_all(const char * const format, ...)
 		while (j < 4)
 		{
 			if (format[i] == *functions[j].type)
-			{	
+			{
 				functions[j].print(args, separator);
 				separator = ", ";
 			}
