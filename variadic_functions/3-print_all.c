@@ -90,7 +90,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == functions[j].type)
 			{	
-				functions[j].print(separator, args);
+				functions[j].print(args, separator);
 				separator = ", ";
 			}
 
