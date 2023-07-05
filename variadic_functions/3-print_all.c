@@ -41,7 +41,7 @@ void print_float(va_list arg, char *separator)
 {
 	float point;
 
-	point = va_arg(arg, int);
+	point = va_arg(arg, double);
 	printf("%f%s", point, separator);
 }
 
