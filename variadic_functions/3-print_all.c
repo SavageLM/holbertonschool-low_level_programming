@@ -8,7 +8,7 @@
  * @arg: list of arguments pointing to character to print
  */
 
-void print_char(va_list arg, char separator)
+void print_char(va_list arg, char *separator)
 {
 	char let;
 
@@ -21,7 +21,7 @@ void print_char(va_list arg, char separator)
  * @arg: list of arguments pointing to integer to print
  */
 
-void print_int(va_list arg, char separator)
+void print_int(va_list arg, char *separator)
 {
 	int num;
 
@@ -34,7 +34,7 @@ void print_int(va_list arg, char separator)
  * @arg: list of arguments pointing to float to print
  */
 
-void print_float(va_list arg, char separator)
+void print_float(va_list arg, char *separator)
 {
 	float point;
 
@@ -47,7 +47,7 @@ void print_float(va_list arg, char separator)
  * @arg: list of arguments pointing to string to print
  */
 
-void print_string(va_list arg, char separator)
+void print_string(va_list arg, char *separator)
 {
 	char *str;
 
