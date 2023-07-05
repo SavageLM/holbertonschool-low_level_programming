@@ -59,7 +59,7 @@ void print_string(va_list arg, char *separator)
 		return;
 	}
 
-	printf("%s%i", str, separator);
+	printf("%s%s", str, separator);
 }
 
 /**
