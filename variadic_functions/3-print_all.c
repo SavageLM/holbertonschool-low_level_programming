@@ -55,7 +55,7 @@ void print_string(va_list arg, char *separator)
 {
 	char *str;
 
-	str = va_arg(arg, char*);
+	str = va_arg(arg, char *);
 
 	if (str == NULL)
 	{
