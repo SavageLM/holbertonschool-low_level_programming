@@ -71,7 +71,7 @@ void print_string(va_list arg, char *separator)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j = 0;
+	unsigned int i = 0, j = 0;
 	char *separator = "";
 	checker_t functions[] = {
 		{"c", print_char},
