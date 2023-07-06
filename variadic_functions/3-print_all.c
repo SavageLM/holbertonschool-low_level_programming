@@ -14,7 +14,7 @@ void print_char(va_list arg, char *separator)
 	char let;
 
 	let = va_arg(arg, int);
-	printf("%c%s", let, separator);
+	printf("%s%c", separator, let);
 }
 
 /**
@@ -28,7 +28,7 @@ void print_int(va_list arg, char *separator)
 	int num;
 
 	num = va_arg(arg, int);
-	printf("%i%s", num, separator);
+	printf("%s%i", separator, num);
 }
 
 /**
@@ -42,7 +42,7 @@ void print_float(va_list arg, char *separator)
 	float point;
 
 	point = va_arg(arg, double);
-	printf("%f%s", point, separator);
+	printf("%s%f", separator, point);
 }
 
 /**
@@ -63,7 +63,7 @@ void print_string(va_list arg, char *separator)
 		return;
 	}
 
-	printf("%s%s", str, separator);
+	printf("%s%s", separator, str);
 }
 
 /**
@@ -81,7 +81,7 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string}
 	};
-	char *separator = ", ";
+	char *separator = "";
 	unsigned int i = 0, j = 0;
 
 	va_start(args, format);
@@ -95,9 +95,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *functions[j].type)
 			{
 				functions[j].print(args, separator);
-
-				if (format[i +1] == NULL)
-					separator = "";
+				separator = ", ";
 			}
 
 			j++;
