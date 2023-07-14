@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if ((newend == NULL) || (str == NULL))
 		return (NULL);
 
-	while (str[i])
+	for (i = o; str[i];)
 		i++;
 
 	newend->str = strdup(str);
