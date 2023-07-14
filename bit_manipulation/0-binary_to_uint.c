@@ -17,12 +17,14 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if ((b[i] != 0) || (b[i] != 1))
 			return (0);
-		if (b[i] == 1)
-			exponet++;
 	}
 
-	for (i = 0; i < exponet; i++)
-		converter *= exponet;
+	for (i -= 1; i >= 0; i--)
+	{
+		exponet += (b[i] - '0') * converter;
+		converter *= 2;
+	}
+
 
 	return (converter);
 }
