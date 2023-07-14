@@ -3,7 +3,7 @@
 /**
  * list_len - Function for returning number of element in a linked list
  * @h: list to be counted
- * Retunr: Returns length of list
+ * Return: Returns length of list
  */
 
 size_t list_len(const list_t *h)
