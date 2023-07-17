@@ -9,19 +9,20 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int converter = 1, exponet = 0;
-	int i;
+	int i, c = 0;
 
 	if (b == NULL)
 		return (0);
 
 	for (i = 0; b[i] != '\0'; i++)
-	{
-			return (0);
-	}
+		c++
 
-	for (i -= 1; i >= 0; i--)
+	for (c -= 1; c >= 0; c--)
 	{
-		exponet += (b[i] - '0') * converter;
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+
+		exponet += (b[c] - '0') * converter;
 		converter *= 2;
 	}
 
