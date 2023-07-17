@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (c -= 1; c >= 0; c--)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[c] != '0' && b[c] != '1')
 			return (0);
 
 		exponet += (b[c] - '0') * converter;
