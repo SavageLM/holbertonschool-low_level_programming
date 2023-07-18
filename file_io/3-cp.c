@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
 void file_copy(const char *file_from, const char *file_to)
 {
-	char buffer = malloc(sizeof(char) * 1024);
+	char buffer[1024];
 	int src, dest, reader;
 
 	src = open(file_from, O_RDONLY);
@@ -38,7 +38,7 @@ void file_copy(const char *file_from, const char *file_to)
 	}
 
 	dest = open(file_to, O_CREAT | O_WRONLY | O_TRUNC);
-	while ((reader = read(src, buffer)) > 0)
+	while ((reader = read(src, buffer, 1024)) > 0)
 	{
 		if (write(dest, buffer, reader) != reader || dest == -1)
 		{
