@@ -8,20 +8,18 @@
 #include <stdarg.h>
 
 /**
- * struct list_s - a singly linked list
- * @str: a pointer to a malloc'd string
- * @len: length of string
- * @next: pointer to next node in list
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
  *
- * Description: a structure for a singly linked list
+ * Description: singly linked list node structure
+ * 
  */
-
-typedef struct list_s
+typedef struct listint_s
 {
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+    int n;
+    struct listint_s *next;
+} listint_t;
 
 /*Prototypes*/
 size_t print_listint(const listint_t *h);
