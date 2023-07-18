@@ -50,7 +50,7 @@ void file_copy(const char *file_from, const char *file_to)
 	if (reader == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-		exit(100);
+		exit(98);
 	}
 
 	if (close(src) == -1)
