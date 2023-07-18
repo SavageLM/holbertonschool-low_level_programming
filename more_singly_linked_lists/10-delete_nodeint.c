@@ -7,7 +7,7 @@
  * Return: 1 on success, or -1 on fail
  */
 
-int delete_nodeint_at_index(listint_t **head, u)nsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *tmp, *copy = *head;
 	unsigned int counts;
