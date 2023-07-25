@@ -3,6 +3,7 @@
 /**
  * hash_table_set - adds element tp a hash table
  * @ht: hash table to add or update key/value to
+ * @key: The Key
  * @value: value to be added or updated
  * Return: 1 on success, 0 on fail
  */
@@ -23,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ki = key_index((const unsigned char *) key, ht->size);
 	for (i = ki; ht->array[i]; i++)
 	{
-		if( strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
 			free(ht->array[i]->value);
 			ht->array[i]->value = val_dupe;
